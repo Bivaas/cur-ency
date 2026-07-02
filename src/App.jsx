@@ -4,7 +4,7 @@ const App = () => {
 
     <div className="currency-converter">
 
-      <h2 clasName="converter-title">Currency Converter</h2>
+      <h2 className="converter-title">Currency Converter</h2>
 
         <form className="converter-form">
 
@@ -35,6 +35,40 @@ const App = () => {
 
               </div>
             </div>
+
+
+            <div className="swap-icon">
+
+              <img src="/swap.png"></img>
+
+            </div>
+
+
+            <div className="form-section">
+
+              <label className="form-label">From</label>
+
+              <div className="currency-select">
+
+              <img src="" alt="Flag" />
+
+                <select className="currency-dropdown">
+
+                  <option value="NPR"></option>
+                  <option value="INR"></option>
+                  <option value="SGD"></option>
+
+                </select>
+
+              </div>
+            </div>
+
+
+            <button type="submit" className="submit-button">Exchange</button>
+
+            <p className='exchange-rate-result'>1 USD = 150 NPR</p>
+
+
           </div>
   
         </form>
@@ -42,3 +76,7 @@ const App = () => {
     </div>
   )
 }
+
+
+
+export default App
