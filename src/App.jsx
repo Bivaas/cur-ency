@@ -15,7 +15,7 @@ const App = () => {
 
           </div>
 
-          <div className="form-group">
+          <div className="form-currency-group">
 
             <div className="form-section">
 
@@ -46,7 +46,7 @@ const App = () => {
 
             <div className="form-section">
 
-              <label className="form-label">From</label>
+              <label className="form-label">To</label>
 
               <div className="currency-select">
 
@@ -63,13 +63,13 @@ const App = () => {
               </div>
             </div>
 
+          </div>
+
 
             <button type="submit" className="submit-button">Exchange</button>
 
             <p className='exchange-rate-result'>1 USD = 150 NPR</p>
 
-
-          </div>
   
         </form>
 

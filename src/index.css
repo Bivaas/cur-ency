@@ -70,15 +70,82 @@ body {
     font-size: 1rem;
 }
 
+
 .converter-form .form-group .form-input { 
 
     outline: none;
     font-size: 1.1rem;
+    padding: 0 15px;
+    color: white;
+    font-weight: 500;
     min-height: 48px;
     border-radius: 6px;
 
     background: rgba(2,7,40,0.5);
     border: 1px solid rgba(255, 255, 255, 0.5);
-    
+
+}
+
+.converter-form .form-currency-group { 
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.form-currency-group .country-select {
+
+    display: flex;
+    padding: 0 10px;
+    min-height: 45px;
+    align-items: center;
+    border-radius: 6px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+
+.form-currency-group .currency-select img { 
+
+    width: 25px;
+}
+
+
+.form-currency-group .currency-select .currency-dropdown {
+
+    outline: none;
+    border: none;
+    background: none;
+
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 10px 0 5px;
+}
+
+
+.form-currency-group .currency-select .currency-dropdown option {
+
+    color: #000;
+    font-weight: 500
+}
+
+
+.form-currency-group .swap-icon { 
+
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
