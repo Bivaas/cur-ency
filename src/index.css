@@ -52,3 +52,33 @@ body {
 
 }
 
+
+.converter-form .form-group { 
+
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+
+}
+
+.converter-form .form-group .form-label {
+
+    color: white;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 9px;
+    font-size: 1rem;
+}
+
+.converter-form .form-group .form-input { 
+
+    outline: none;
+    font-size: 1.1rem;
+    min-height: 48px;
+    border-radius: 6px;
+
+    background: rgba(2,7,40,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    
+}
+
