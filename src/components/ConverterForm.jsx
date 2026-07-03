@@ -2,6 +2,9 @@ import React from 'react'
 
 const ConverterForm = () => { 
 
+    const [fromCurrency, setFromCurrency] = useState("USD");
+    const [toCurrency, setToCurrency] = useState("INR");
+
     return ( 
 
         <form className="converter-form">
@@ -13,13 +16,18 @@ const ConverterForm = () => {
 
           </div>
 
-          <div className="form-currency-group">
+          <div className="form-group form-currency-group">
 
             <div className="form-section">
 
               <label className="form-label">From</label>
 
-              <div className="currency-select">
+
+                <CurrencySelect 
+
+                    selectedCurrency={fromCurrency}
+              
+                />
 
               <img src="" alt="Flag" />
 
@@ -31,7 +39,7 @@ const ConverterForm = () => {
 
                 </select>
 
-              </div>
+              
             </div>
 
 
@@ -46,7 +54,11 @@ const ConverterForm = () => {
 
               <label className="form-label">To</label>
 
-              <div className="currency-select">
+
+                <CurrencySelect 
+              
+                    selectedCurrency={toCurrency}
+                />
 
               <img src="https://flagsapi.com/US/flat/64.png" alt="Flag" />
               
@@ -59,7 +71,7 @@ const ConverterForm = () => {
 
                 </select>
 
-              </div>
+              
             </div>
 
           </div>
