@@ -2,8 +2,10 @@ import React from 'react'
 
 const ConverterForm = () => { 
 
+    const [amount, setAmount] = useState(100);
     const [fromCurrency, setFromCurrency] = useState("USD");
     const [toCurrency, setToCurrency] = useState("INR");
+    const [result, setResult] = useState("");
 
     // swap values with swap btn
     const handleSwapCurrencies = () => {
@@ -25,6 +27,8 @@ const ConverterForm = () => {
             if (!response.ok) throw Error("Hmm...something isn't right !");
 
             const data = await response.json();
+            const rate = (data.conversion_rate * amount).toFixed();
+            setResult('${amount} ${fromCurrency} = ${rate} ${toCurrency}');
 
         } catch (error) {
 
@@ -47,7 +51,7 @@ const ConverterForm = () => {
           <div className="form-group">
 
             <label className="form-label">Enter Amount</label>
-            <input type="number" className="form-input" required />
+            <input type="number" className="form-input" value={amount} onChange={e=> setAmount(e.target.value)} required />
 
           </div>
 
@@ -116,7 +120,11 @@ const ConverterForm = () => {
 
             <button type="submit" className="submit-button">Exchange</button>
 
-            <p className='exchange-rate-result'>1 USD = 150 NPR</p>
+
+            {/* / final output (conversion result) */}
+            <p className='exchange-rate-result'>
+                {result}
+            </p>
 
   
         </form>
