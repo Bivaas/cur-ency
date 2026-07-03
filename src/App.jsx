@@ -1,6 +1,8 @@
+import ConverterForm from './components/ConverterForm'
+
 const App = () => { 
 
-  return ( 
+    return ( 
 
     <div className="currency-converter">
 

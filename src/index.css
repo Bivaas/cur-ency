@@ -158,6 +158,12 @@ body {
 
 }
 
+
+.form-currency-group .swap-icon img {
+
+    width: 16px;
+}
+
 .converter-form .submit-button { 
 
     width: 100%;
@@ -193,6 +199,6 @@ body {
 
     letter-spacing: 0.5px;
     background: rgba(255, 255, 255, 0.15);
-    
+
 }
 

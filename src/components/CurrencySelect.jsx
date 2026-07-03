@@ -22,7 +22,7 @@ const currencyCodes = [
 
 ]
 
-const CurrencySelect = () => { 
+const CurrencySelect = ({selectedCurrency}) => { 
 
     return (
 
@@ -30,7 +30,7 @@ const CurrencySelect = () => {
 
             <img src="https://flagsapi.com/US/flat/64.png" alt="Flag" />
 
-            <select className="currency-dropdown"> 
+            <select className="currency-dropdown" value={selectedCurrency}> 
 
                 {currencyCodes.map(currency => (
 
