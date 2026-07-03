@@ -6,6 +6,7 @@ const ConverterForm = () => {
     const [fromCurrency, setFromCurrency] = useState("USD");
     const [toCurrency, setToCurrency] = useState("INR");
     const [result, setResult] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
 
     // swap values with swap btn
     const handleSwapCurrencies = () => {
@@ -21,18 +22,23 @@ const ConverterForm = () => {
         const API_KEY
         const API_URL = `https://v6.exchangerate-api.com/v6/${API_KEY}/pair/${fromCurrency}/${toCurrency}`;
 
+        setIsLoading(true);
+
         try { 
 
             const response = await fetch(API_URL);
             if (!response.ok) throw Error("Hmm...something isn't right !");
 
             const data = await response.json();
-            const rate = (data.conversion_rate * amount).toFixed();
+            const rate = (data.conversion_rate * amount).toFixed(3);
             setResult('${amount} ${fromCurrency} = ${rate} ${toCurrency}');
 
         } catch (error) {
 
             console.log(error);
+        } finally { 
+
+            setIsLoading(false);
         }
     }
 
@@ -43,6 +49,9 @@ const ConverterForm = () => {
         getExchangeRate();
 
     }
+
+    useEffect(() => getExchangeRate, []);
+
 
     return ( 
 
@@ -118,12 +127,12 @@ const ConverterForm = () => {
           </div>
 
 
-            <button type="submit" className="submit-button">Exchange</button>
+            <button type="submit" className={`${isLoading ? "Loading" : ""} submit-button`}>Exchange</button>
 
 
-            {/* / final output (conversion result) */}
+            {/* / final output (conversion result) and load */}
             <p className='exchange-rate-result'>
-                {result}
+                {isLoading ? "Getting you result.." : result}
             </p>
 
   
