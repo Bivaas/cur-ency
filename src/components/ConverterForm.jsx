@@ -5,6 +5,14 @@ const ConverterForm = () => {
     const [fromCurrency, setFromCurrency] = useState("USD");
     const [toCurrency, setToCurrency] = useState("INR");
 
+    // swap values with swap btn
+    const handleSwapCurrencies = () => {
+
+        setFromCurrency(toCurrency);
+        setToCurrency(fromCurrency);
+
+    }
+
     return ( 
 
         <form className="converter-form">
@@ -44,7 +52,7 @@ const ConverterForm = () => {
             </div>
 
 
-            <div className="swap-icon">
+            <div className="swap-icon" onClick={handleSwapCurrencies}>
 
               <img src="/swap.png"></img>
 
