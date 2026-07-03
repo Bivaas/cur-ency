@@ -13,9 +13,36 @@ const ConverterForm = () => {
 
     }
 
+    // fetch exchange rate with API and update 
+    const getExchangeRate = () => {
+
+        const API_KEY
+        const API_URL = `https://v6.exchangerate-api.com/v6/${API_KEY}/pair/${fromCurrency}/${toCurrency}`;
+
+        try { 
+
+            const response = await fetch(API_URL);
+            if (!response.ok) throw Error("Hmm...something isn't right !");
+
+            const data = await response.json();
+
+        } catch (error) {
+
+            console.log(error);
+        }
+    }
+
+    // submit values (form submission eventhandler)
+    const handleFormSubmit = (e) => {
+
+        e.preventDefault();
+        getExchangeRate();
+
+    }
+
     return ( 
 
-        <form className="converter-form">
+        <form className="converter-form" onSubmit={handleFormSubmit} >
 
           <div className="form-group">
 
