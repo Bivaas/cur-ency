@@ -26,6 +26,7 @@ const ConverterForm = () => {
                 <CurrencySelect 
 
                     selectedCurrency={fromCurrency}
+                    handleCurrency={e => setFromCurrency(e.target.value)}
               
                 />
 
@@ -58,6 +59,7 @@ const ConverterForm = () => {
                 <CurrencySelect 
               
                     selectedCurrency={toCurrency}
+                    handleCurrency={ e => set}
                 />
 
               <img src="https://flagsapi.com/US/flat/64.png" alt="Flag" />
