@@ -40,7 +40,7 @@ const CurrencySelect = ({selectedCurrency, handleCurrency }) => {
 
                 {currencyCodes.map(currency => (
 
-                    <option key={currency} value={curency}>{currency}</option>
+                    <option key={currency} value={currency}>{currency}</option>
 
                 ))}
 

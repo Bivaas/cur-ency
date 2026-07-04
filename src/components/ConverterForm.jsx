@@ -1,4 +1,5 @@
 import React from 'react'
+import CurrencySelect from './CurrencySelect'
 
 const ConverterForm = () => { 
 
@@ -17,9 +18,9 @@ const ConverterForm = () => {
     }
 
     // fetch exchange rate with API and update 
-    const getExchangeRate = () => {
+    const getExchangeRate = async () => {
 
-        const API_KEY
+        const API_KEY = "";
         const API_URL = `https://v6.exchangerate-api.com/v6/${API_KEY}/pair/${fromCurrency}/${toCurrency}`;
 
         setIsLoading(true);
