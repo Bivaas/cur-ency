@@ -50,7 +50,7 @@ const ConverterForm = () => {
 
     }
 
-    useEffect(() => getExchangeRate, []);
+    useEffect(() => { getExchangeRate() }, []);
 
 
     return ( 
@@ -78,16 +78,6 @@ const ConverterForm = () => {
               
                 />
 
-              <img src="" alt="Flag" />
-
-                <select className="currency-dropdown">
-
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-
-                </select>
-
               
             </div>
 
@@ -107,19 +97,8 @@ const ConverterForm = () => {
                 <CurrencySelect 
               
                     selectedCurrency={toCurrency}
-                    handleCurrency={ e => set}
+                    handleCurrency={ e => setToCurrency(e.target.value)}
                 />
-
-              <img src="https://flagsapi.com/US/flat/64.png" alt="Flag" />
-              
-
-                <select className="currency-dropdown">
-
-                  <option value="USD" selected>USD</option>
-                  <option value="INR">INR</option>
-                  <option value="NPR">NPR</option>
-
-                </select>
 
               
             </div>

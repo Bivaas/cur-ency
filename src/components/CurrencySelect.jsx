@@ -31,7 +31,7 @@ const CurrencySelect = ({selectedCurrency, handleCurrency }) => {
 
         <div className="currency-select">
 
-            <img src="https://flagsapi.com/${countryCode}/flat/64.png" alt="Flag" />
+            <img src={`https://flagsapi.com/${countryCode}/flat/64.png`} alt="Flag" />
 
             <select 
             onChange={handleCurrency} 

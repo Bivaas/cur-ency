@@ -16,4 +16,5 @@ However, I will be adding some additional cool features I have in my mind :)
 FlagAPI: https://flagsapi.com/US/flat/64.png
 Swap icon: https://www.flaticon.com/free-icon/swap_17714908
 Currency value (API) https://app.exchangerate-api.com/
+Favicon: https://www.flaticon.com/free-icon/dollar-symbol_2150264
 ```
