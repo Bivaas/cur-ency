@@ -208,3 +208,25 @@ body {
 
 }
 
+
+.converter-form .insight-button {
+
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #5372F0;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.converter-form .insight-result { 
+
+    margin-top: 15px;
+    color: white;
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+}

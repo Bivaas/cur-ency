@@ -1,5 +1,5 @@
 // the model I am using (might change later)
-const MODEL = "meta/llama-3.2-70b-instruct";
+const MODEL = "meta/llama-3.1-70b-instruct";
 
 
 export default async function handler(req, res) { 
@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
     // system prompt for currency bg
     const sysprompt = `You are an economic historian. The currency you will be describing will be ${currency}. It is the currency code. You have to identify which country it is, then in 4-6 lines, give historical background into the currency (like how influential it was, how strong it was, peak period with rough date, the key events which caused its value to change and rises / downfalls) and where it stands today economically. You should be factual and specific, not generic.`
-}
+
 
 try { 
 
@@ -38,10 +38,13 @@ try {
     const data = await response.json();
     if (!response.ok) throw new Error("Your AI request failed !")
 
+
 } 
 
 catch (error) {
 
     res.status(500).json({ error: error.message });
     
+    }
+
 }

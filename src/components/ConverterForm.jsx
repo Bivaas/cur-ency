@@ -54,7 +54,7 @@ const ConverterForm = () => {
         try { 
 
             const response = await fetch (`/api/insight?currency=${toCurrency}`);
-            if (!respond.ok) throw Error ("Hmm..background could not be loaded !")
+            if (!response.ok) throw Error ("Hmm..background could not be loaded !")
 
             const data = await response.json();
             setInsight(data.insight);
@@ -142,6 +142,13 @@ const ConverterForm = () => {
             <p className='exchange-rate-result'>
                 {isLoading ? "Getting you result.." : result}
             </p>
+
+            <button type="button" className="insight-button" onClick={getInsight}>
+
+                {insightLoading ? "Loading background..." : "Historical Background"}
+            </button>
+
+            {insight && <p className="insight-result"> {insight} </p>}
 
   
         </form>
