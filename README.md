@@ -2,7 +2,11 @@
 
 A simple website to convert currency. 
 
-# About
+# About 
+
+This is a project whose main purpose is doing currency conversion BUT it also provides some insight into the currency itself. In a way, you could say that I've spent more time in extras (like AI and latest info feature) than the actual core project itself but that's what makes it different ig.. Making a simple currency convert is kinda like making calculator or to do list so I thought of adding something fun :)
+
+Right now, I've used llama-3.1-instruct which is a 70b parameter model. The temperature is set at 0.5 so it does not tell anything gibberish that we dont like to hear. Also, the token is capped at 500 (might increase later) since it's use window is relatively small and no input required too.
 
 # Motivation
 
@@ -12,13 +16,15 @@ However, I will be adding some additional cool features I have in my mind :)
 
 # Use of AI 
 
-I used AI to implement local /api runner so I dont gotta deploy every build to see /api functionality.
+I used AI to implement local /api runner so I dont gotta deploy every build to see /api functionality. I also used it for general debugging and improving some issues with my code. I kept getting error during API setup so I took help on that case as well. Mostly, AI basically refined / improved the part of code which was not working properly as intended. 
 
 # Everything that I've used
 
 ```
 FlagAPI: https://flagsapi.com/US/flat/64.png
 Swap icon: https://www.flaticon.com/free-icon/swap_17714908
-Currency value (API) https://app.exchangerate-api.com/
+Currency value (API): https://app.exchangerate-api.com/
 Favicon: https://www.flaticon.com/free-icon/dollar-symbol_2150264
+Search (API): https://serper.dev/
+AI model (API): https://build.nvidia.com/models
 ```
