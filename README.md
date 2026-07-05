@@ -10,6 +10,10 @@ I always used currency converter to plan for my trip to SGP for arcana. I needed
 
 However, I will be adding some additional cool features I have in my mind :)
 
+# Use of AI 
+
+I used AI to implement local /api runner so I dont gotta deploy every build to see /api functionality.
+
 # Everything that I've used
 
 ```
