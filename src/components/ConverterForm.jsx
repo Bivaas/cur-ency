@@ -9,6 +9,10 @@ const ConverterForm = () => {
     const [result, setResult] = useState("");
     const [isLoading, setIsLoading] = useState(false);
 
+    // for insight / AI summary 
+    const [insight, setInsight] = useState("");
+    const [insightLoading, setInsightLoading] = useState(false);
+
     // swap values with swap btn
     const handleSwapCurrencies = () => {
 
@@ -40,6 +44,31 @@ const ConverterForm = () => {
 
             setIsLoading(false);
         }
+    }
+
+    // handler for getting AI summary of economic bg
+    const getInsight = async () => { 
+
+        setInsightLoading(true);
+
+        try { 
+
+            const response = await fetch (`/api/insight?currency=${toCurrency}`);
+            if (!respond.ok) throw Error ("Hmm..background could not be loaded !")
+
+            const data = await response.json();
+            setInsight(data.insight);
+
+        } catch (error) { 
+
+            console.log(error);
+
+        } finally { 
+
+            setInsightLoading(false);
+            
+        }
+    
     }
 
     // submit values (form submission eventhandler)
