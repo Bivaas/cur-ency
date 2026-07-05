@@ -31,7 +31,7 @@ const ConverterForm = () => {
 
             const data = await response.json();
             const rate = (data.conversion_rate * amount).toFixed(3);
-            setResult('${amount} ${fromCurrency} = ${rate} ${toCurrency}');
+            setResult(`${amount} ${fromCurrency} = ${rate} ${toCurrency}`);
 
         } catch (error) {
 
