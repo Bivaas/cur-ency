@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     const { from, to } = req.query;
     const API_KEY = process.env.EXCHANGE_API_KEY;
 
-    const url = `https://v6.exchangerate-api.com/v6/${API_KEY}/pair/$${from}/${to}`;
+    const url = `https://v6.exchangerate-api.com/v6/${API_KEY}/pair/${from}/${to}`;
 
     try { 
 
