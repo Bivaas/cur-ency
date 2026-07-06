@@ -18,6 +18,12 @@ However, I will be adding some additional cool features I have in my mind :)
 
 I used AI to implement local /api runner so I dont gotta deploy every build to see /api functionality. I also used it for general debugging and improving some issues with my code. I kept getting error during API setup so I took help on that case as well. Mostly, AI basically refined / improved the part of code which was not working properly as intended. 
 
+# NOTE:
+
+My project might be flagged for fraud because of some glitch in hackatime. As of today (6july 6:43 NPT) my hackatime hours in dashboard shows 11h 13m but when I use date range filter (of 30 days), I see that I've worked around 7 hours only. I am not sure if this is visual bug or something really happened. I am not asking for my inflated hours to be approved but the 7 hours that I worked + any further work that I will do from now on. 
+
+I genuinely dont know how it got to 11hrs. Last time I remember, it was around 6hr 50ish minute yesterday. I saw yesterday duration in total and it was about 1hr 30mins. So, there's NO WAY that 11hrs can be made. Please let me know how my hours got increased and what I should be concerned about.  
+
 # Everything that I've used
 
 ```
