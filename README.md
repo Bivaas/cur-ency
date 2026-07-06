@@ -6,7 +6,7 @@ A simple website to convert currency.
 
 This is a project whose main purpose is doing currency conversion BUT it also provides some insight into the currency itself. In a way, you could say that I've spent more time in extras (like AI and latest info feature) than the actual core project itself but that's what makes it different ig.. Making a simple currency convert is kinda like making calculator or to do list so I thought of adding something fun :)
 
-Right now, I've used llama-3.1-instruct which is a 70b parameter model. The temperature is set at 0.5 so it does not tell anything gibberish that we dont like to hear. Also, the token is capped at 500 (might increase later) since it's use window is relatively small and no input required too.
+Right now, I've used llama-3.1-instruct which is a 70b parameter model. The temperature is set at 0.5 so it does not tell anything gibberish that we dont like to hear. Also, the token is capped at 700 (might increase later) since it's use window is relatively small and no input required too.
 
 # Motivation
 
