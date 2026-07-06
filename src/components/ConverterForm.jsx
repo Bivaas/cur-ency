@@ -153,11 +153,17 @@ const ConverterForm = () => {
   
         </form>
 
-                {insight && (
-                    <div className="insight-panel">
-                        <p>{insight}</p>
-                    </div>
-                )}
+            {insight && (
+
+          <div className="insight-panel">
+
+            {insight.split(/\n\s*\n/).filter(para => para.trim()).map((para, i) => (
+
+              <p key={i}>{para}</p>
+            ))}
+
+          </div>
+        )}
 
     </>
 

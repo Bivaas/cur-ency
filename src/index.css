@@ -12,7 +12,7 @@ body {
     justify-content: center;
 
     min-height: 100vh;
-    background: #030728;
+    background: #eef2ff;
 }
 
 #root { 
@@ -23,23 +23,23 @@ body {
 
 .currency-converter { 
 
-    background: red;
+    background: white;
     padding: 40px 30px 50px;
     border-radius: 8px;
     max-width: 410px;
     margin: 0 auto;
     border-radius: 14px;
 
-    background: #031340;
+    background: white;
     backdrop-filter: blur(30px);
-    box-shadow: 0 8px 32px black;
+    box-shadow: 0 8px 32px rgba(83, 114, 240, 0.15);
 
 }
 
  
 .currency-converter .converter-title {
 
-    color: white;
+    color: #1e3a8a;
     font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
@@ -63,7 +63,7 @@ body {
 
 .converter-form .form-group .form-label {
 
-    color: white;
+    color: #1e3a8a;
     font-weight: 500;
     display: block;
     margin-bottom: 9px;
@@ -76,13 +76,13 @@ body {
     outline: none;
     font-size: 1.1rem;
     padding: 0 15px;
-    color: white;
+    color: #1e293b;
     font-weight: 500;
     min-height: 48px;
     border-radius: 6px;
 
-    background: rgba(2,7,40,0.5);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: white;
+    border: 1px solid white;
 
 }
 
@@ -102,8 +102,8 @@ body {
     align-items: center;
     border-radius: 6px;
 
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: white;
+    border: 1px solid white;
 
 }
 
@@ -120,7 +120,7 @@ body {
     border: none;
     background: none;
 
-    color: white;
+    color: #1e293b;
     font-size: 1rem;
     font-weight: 500;
     padding: 0 10px 0 5px;
@@ -145,8 +145,8 @@ body {
     justify-content: center;
 
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: #5372F0;
+    border: 1px solid #5372F0;
     transition: 0.2s ease;
 
 }
@@ -154,7 +154,7 @@ body {
 
 .form-currency-group .swap-icon:hover {
 
-    background: rgba(255, 255, 255, 0.3);
+    background: #3f3fd9;
 
 }
 
@@ -188,13 +188,13 @@ body {
 
 .converter-form .submit-button:hover {
 
-    background: rgba(255, 255, 255, 0.8);
+    background: rgb(126, 148, 163);
 
 }
 
 .converter-form .exchange-rate-result { 
 
-    color: white;
+    color: #1e3a8a;
     font-size: 1.1rem;
     font-weight: 500;
 
@@ -204,7 +204,7 @@ body {
     border-radius: 6px;
 
     letter-spacing: 0.5px;
-    background: rgba(255, 255, 255, 0.15);
+    background: white;
 
 }
 
@@ -215,7 +215,7 @@ body {
     width: 100%;
     padding: 12px;
     background: transparent;
-    color: #fff;
+    color: #5372F0;
     border: 1px solid #5372F0;
     border-radius: 8px;
     cursor: pointer;
@@ -225,7 +225,7 @@ body {
 .converter-form .insight-result { 
 
     margin-top: 15px;
-    color: white;
+    color: #1e293b;
     font-size: 0.95rem;
     line-height: 1.5;
 
@@ -237,15 +237,15 @@ body {
     max-width: 640px;
     margin: 20px auto 0;
     padding: 20px 24px;
-    background: black;
-    border: 1p solid #2A2F45;
+    background: white;
+    border: 1px solid #c7d2fe;
     border-radius: 10px;
 }
 
 .insight-panel p { 
 
     margin: 0;
-    color: white;
+    color: #1e293b;
     font-size: 1rem;
     line-height: 1.6;
     text-align: left;

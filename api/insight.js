@@ -34,9 +34,10 @@ export default async function handler(req, res) {
 
 
     // system prompt for currency bg
-    const sysprompt = `You are an economic historian. The currency you will be describing will be ${currency}. It is the currency code. You have to identify which country it is, then in 4-6 lines, give historical background into the currency (like how influential it was, how strong it was, peak period with rough date, the key events which caused its value to change and rises / downfalls) and where it stands today economically. You should be factual and specific, not generic.
+    const sysprompt = `You are an economic historian. The currency you will be describing will be ${currency}. It is the currency code. You have to identify which country it is. You should write two paragraph seperated by a blank line. You should be factual and specific, not generic. In first paragraph (4-6 lines), give historical background into the currency (like how influential it was, how strong it was, peak period with rough date, the key events which caused its value to change and rises / downfalls). 
     
-    Then add 2-3 lines on the CURRENT situation of that currency using latest headlines as context:\n\n${headlines || "(no recent headlines found)"}`
+    In second paragraph (2-3 lines) write about the current economic situation, where it stands today economically using these headlines as context: \n\n${headlines || "(no recent headlines found)"}`
+    
 
 
     const response = await fetch ("https://integrate.api.nvidia.com/v1/chat/completions", {
