@@ -38,6 +38,11 @@ try {
     const data = await response.json();
     if (!response.ok) throw new Error("Your AI request failed !")
 
+    const insight = data?.choices?.[0]?.message?.content;
+    if (!insight) throw new Error("AI response did not include insight text.");
+
+    res.status(200).json({ insight });
+
 
 } 
 
