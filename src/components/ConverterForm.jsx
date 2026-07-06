@@ -84,6 +84,8 @@ const ConverterForm = () => {
 
     return ( 
 
+        <>
+
         <form className="converter-form" onSubmit={handleFormSubmit} >
 
           <div className="form-group">
@@ -148,10 +150,16 @@ const ConverterForm = () => {
                 {insightLoading ? "Loading background..." : "Historical Background"}
             </button>
 
-            {insight && <p className="insight-result"> {insight} </p>}
-
   
         </form>
+
+                {insight && (
+                    <div className="insight-panel">
+                        <p>{insight}</p>
+                    </div>
+                )}
+
+    </>
 
     )
 }
