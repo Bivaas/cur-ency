@@ -26,6 +26,14 @@ My project might be flagged for fraud because of some glitch in hackatime. As of
 
 I genuinely dont know how it got to 11hrs. Last time I remember, it was around 6hr 50ish minute yesterday. I saw yesterday duration in total and it was about 1hr 30mins. So, there's NO WAY that 11hrs can be made. Please let me know how my hours got increased and what I should be concerned about.  
 
+# Images: 
+
+_USD to NPR conversion_
+![Screenshot](Uploads/S1.png)
+
+_JPY to INR conversion_
+![Screenshot](Uploads/S2.png)
+
 # Everything that I've used
 
 ```
