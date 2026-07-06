@@ -12,7 +12,10 @@ body {
     justify-content: center;
 
     min-height: 100vh;
-    background: #eef2ff;
+    background-color: rgb(214, 210, 210);
+    background-image: radial-gradient(#94a3b8 1px, transparent 1px);
+    background-size: 16px 16px;
+
 }
 
 #root { 
@@ -32,7 +35,6 @@ body {
 
     background: white;
     backdrop-filter: blur(30px);
-    box-shadow: 0 8px 32px rgba(83, 114, 240, 0.15);
 
 }
 

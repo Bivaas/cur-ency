@@ -37,4 +37,5 @@ Currency value (API): https://app.exchangerate-api.com/
 Favicon: https://www.flaticon.com/free-icon/dollar-symbol_2150264
 Search (API): https://serper.dev/
 AI model (API): https://build.nvidia.com/models
+Background: https://bg.ibelick.com/
 ```
