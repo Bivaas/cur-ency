@@ -157,7 +157,7 @@ const ConverterForm = () => {
 
           <div className="insight-panel">
 
-            {insight.split(/\n\s*\n/).filter(para => para.trim()).map((para, i) => (
+            {insight.split(/\n*-{3,}\n*|\n\s*\n/).filter(para => para.trim()).map((para, i) => (
 
               <p key={i}>{para}</p>
             ))}

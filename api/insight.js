@@ -34,9 +34,7 @@ export default async function handler(req, res) {
 
 
     // system prompt for currency bg
-    const sysprompt = `You are an economic historian. The currency you will be describing will be ${currency}. It is the currency code. You have to identify which country it is. You should write two paragraph seperated by a blank line. You should be factual and specific, not generic. In first paragraph (4-6 lines), give historical background into the currency (like how influential it was, how strong it was, peak period with rough date, the key events which caused its value to change and rises / downfalls). 
-    
-    In second paragraph (2-3 lines) write about the current economic situation, where it stands today economically using these headlines as context: \n\n${headlines || "(no recent headlines found)"}`
+    const sysprompt = `You are an economic historian describing the currency ${currency} (a currency code — first identify its country). Be factual and specific, not generic. Write exactly two paragraphs, and put a line containing only --- between them (use --- nowhere else). First paragraph (4-6 lines): historical background — how influential and strong the currency was, its peak period with rough dates, and the key events behind its rises and downfalls. Second paragraph (2-3 lines): its current economic situation, using these latest headlines as context:\n\n${headlines || "(no recent headlines found)"}`
     
 
 

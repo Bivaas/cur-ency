@@ -4,7 +4,7 @@ A simple website to convert currency.
 
 # How it works 
 
-
+I've used multiple API's for different features. I have some country code saved in CurrencySelect. Those code upon selection will use flag API to display their respective flags. Then, when you click in Exchange btn, it uses exchangerate API to compare two values and display them at the bottom. The part which I felt unique is Historical Background where we learn about the currency we select. For this, I've used an AI model which first tells about currency (like history of economy) and in second paragraph, it uses serper API to pull headline of selected currency when that information is also formated with same AI but with latest updated context. 
 
 # About 
 
@@ -16,11 +16,9 @@ Right now, I've used llama-3.1-instruct which is a 70b parameter model. The temp
 
 I always used currency converter to plan for my trip to SGP for arcana. I needed it to see the accomodation cost, travel cost and misc cost along with transit airport currency values. So, I thought why not build one. At first, I thought it was simple but turns out its just one API for actual core MVP. 
 
-However, I will be adding some additional cool features I have in my mind :)
-
 # Use of AI 
 
-I used AI to implement local /api runner so I dont gotta deploy every build to see /api functionality. I also used it for general debugging and improving some issues with my code. I kept getting error during API setup so I took help on that case as well. Mostly, AI basically refined / improved the part of code which was not working properly as intended. 
+I used AI to implement local /api runner so I dont gotta deploy every build to see /api functionality. I also used it for general debugging and improving some issues with my code. I kept getting error during API setup so I took help on that case as well as paragraph seperation. Mostly, AI basically refined / improved the part of code which was not working properly as intended. 
 
 # NOTE:
 
