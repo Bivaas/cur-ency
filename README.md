@@ -29,10 +29,10 @@ I genuinely dont know how it got to 11hrs. Last time I remember, it was around 6
 # Images: 
 
 _USD to NPR conversion_
-![Screenshot](Uploads/S1.png)
+![Screenshot](uploads/S1.png)
 
 _JPY to INR conversion_
-![Screenshot](Uploads/S2.png)
+![Screenshot](uploads/S2.png)
 
 # Everything that I've used
 
