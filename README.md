@@ -22,9 +22,11 @@ I used AI to implement local /api runner so I dont gotta deploy every build to s
 
 # NOTE:
 
-My project might be flagged for fraud because of some glitch in hackatime. As of today (6july 6:43 NPT) my hackatime hours in dashboard shows 11h 13m but when I use date range filter (of 30 days), I see that I've worked around 7 hours only. I am not sure if this is visual bug or something really happened. I am not asking for my inflated hours to be approved but the 7 hours that I worked + any further work that I will do from now on. 
+My project might be flagged for fraud because of some glitch in hackatime. As of today (15th july 4:08 NPT) my hackatime hours in dashboard shows 15h 21m. I am not asking for my inflated hours to be approved but 9-10 hours that I actually worked on.
 
-I genuinely dont know how it got to 11hrs. Last time I remember, it was around 6hr 50ish minute yesterday. I saw yesterday duration in total and it was about 1hr 30mins. So, there's NO WAY that 11hrs can be made. Please let me know how my hours got increased and what I should be concerned about.  
+This issue has been informed to fraud squad member and all necessary steps are already done with them. 
+
+[For reviewer] this project has been approved for 7h only due to some confusion regarding tracked time.  This is the reupload of project with updated and clear readme about the issue and to get the remaining hours back.
 
 # Images: 
 
